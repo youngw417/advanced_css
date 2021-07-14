@@ -1,0 +1,57 @@
+@media (max-width: 500px) {
+  .header {
+    &__logo {
+      height: 2.5rem;
+    }
+  }
+
+  .heading-primary {
+    &--main {
+      @include media-heading--main;
+    }
+
+    &--sub {
+      @include media-heading--sub;
+    }
+  }
+
+  .btn {
+    &,
+    &:link,
+    &:visited {
+      @include media-button;
+    }
+  }
+
+  .row {
+    flex-direction: column;
+
+    &--left {
+      width: 100%;
+    }
+
+    &--right {
+      width: 100%;
+    }
+  }
+  .heading-secondary {
+    @include media-2ndHeading;
+  }
+
+  .row--left {
+    margin-bottom: 7rem;
+  }
+
+  .section-about {
+    padding-bottom: 40rem;
+  }
+
+  .feature-box {
+    width: 60%;
+  }
+
+  .section-features {
+    flex-direction: column;
+    align-items: center;
+  }
+}

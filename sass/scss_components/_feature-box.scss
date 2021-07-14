@@ -1,0 +1,37 @@
+.feature-box {
+  background-color: rgba($color-white, 0.8);
+  padding: 2.5rem;
+  width: 15%;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: all 0.3s;
+
+  &__icon {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03) skewY(7deg);
+  }
+  &:nth-child(2) {
+    position: relative;
+    top: 3rem;
+  }
+  &:nth-child(3) {
+    position: relative;
+    top: 6rem;
+  }
+  &:last-child {
+    position: relative;
+    top: 9rem;
+  }
+}

@@ -1,0 +1,58 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  color: #777;
+}
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    animation: moveInLeft 2s ease-out;
+    /* animation-name: moveInLeft;
+          animation-duration: 2s;
+          animation-timing-function: ease-out; */
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    opacity: 1;
+  }
+
+  &--sub {
+    display: block;
+    animation: moveInRight 2s ease-out;
+    font-size: 2rem;
+    letter-spacing: 1.75rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.paragraph {
+  line-height: 3rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
