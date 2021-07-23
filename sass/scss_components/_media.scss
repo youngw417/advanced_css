@@ -25,6 +25,7 @@
 
   .row {
     flex-direction: column;
+    align-items: center;
 
     &--left {
       width: 100%;
@@ -53,5 +54,29 @@
   .section-features {
     flex-direction: column;
     align-items: center;
+  }
+  .col-1-of-3 {
+    width: 80%;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .story {
+    transform: skewX(0);
+    width: 60%;
+
+    &__shape {
+      transform: translate(-1rem, 0) skewX(0);
+    }
+    &__text {
+      transform: skewX(0);
+      h3 {
+        font-size: 1.3rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
   }
 }
