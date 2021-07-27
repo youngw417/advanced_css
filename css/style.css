@@ -7,6 +7,9 @@
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-bottom-medium {
+  margin-bottom: 3.5rem; }
+
 .u-margin-top-big {
   margin-top: 8rem; }
 
@@ -57,6 +60,8 @@ body {
 .row {
   display: flex;
   justify-content: center; }
+  .row-space-btw {
+    justify-content: space-between; }
   .row--left {
     width: 50%; }
   .row--right {
@@ -64,6 +69,9 @@ body {
 
 .col-1-of-3 {
   width: 30%; }
+
+.col-1-of-2 {
+  width: 40%; }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -119,8 +127,10 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
+  border: none;
   position: relative;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  font-family: inherit; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -137,7 +147,8 @@ body {
 
 .btn--green {
   background-color: #55c57a;
-  color: #fff; }
+  color: #fff;
+  display: block; }
   .btn--green::after {
     background-color: #55c57a; }
 
@@ -191,7 +202,7 @@ body {
     height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
@@ -245,6 +256,21 @@ body {
   position: relative;
   padding: 15rem 0;
   background-color: transparent; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 60%, transparent), url(../img/nat-10.jpg);
+  background-size: cover;
+  width: 90%;
+  height: 48rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -415,6 +441,110 @@ body {
     filter: blur(3px) brightness(80%); }
   .story__text {
     transform: translate(2rem, 1.75rem) skewX(12deg); }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__group:last-child {
+  margin-top: 4rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: block;
+  width: 70%;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #55c57a; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s; }
+
+.form__input:placeholder-shown ~ .form__label {
+  opacity: 0;
+  transform: translateY(-4rem); }
+
+.form__radio-group {
+  display: inline-block;
+  margin-right: 3rem; }
+
+.form__radio-input {
+  display: none; }
+
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding-left: 4.5rem;
+  position: relative; }
+
+.form__radio-button {
+  height: 2rem;
+  width: 2rem;
+  border: 5px solid #55c57a;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -0.8rem;
+  left: 0; }
+  .form__radio-button::after {
+    content: '';
+    display: block;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    background-color: #55c57a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s; }
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; }
+
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  color: #f7f7f7;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem; }
+  .footer__navigation {
+    border-top: 1px solid #777;
+    padding-top: 2rem; }
+  .footer__list {
+    list-style: none;
+    display: flex; }
+  .footer__item:not(:last-child) {
+    margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    display: inline-block; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.3); }
 
 @media (max-width: 500px) {
   .header__logo {

@@ -16,6 +16,10 @@ body {
   display: flex;
   justify-content: center;
 
+  &-space-btw {
+    justify-content: space-between;
+  }
+
   &--left {
     width: 50%;
   }
@@ -26,4 +30,8 @@ body {
 }
 .col-1-of-3 {
   width: 30%;
+}
+
+.col-1-of-2 {
+  width: 40%;
 }

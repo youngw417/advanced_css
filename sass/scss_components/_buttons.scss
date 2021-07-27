@@ -7,9 +7,10 @@
     padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 10rem;
-
+    border: none;
     position: relative;
     transition: all 0.2s;
+    font-family: inherit;
   }
 
   &:hover {
@@ -33,6 +34,7 @@
   &--green {
     background-color: $color-primary;
     color: $color-white;
+    display: block;
 
     &::after {
       background-color: $color-primary;
