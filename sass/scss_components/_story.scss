@@ -21,22 +21,20 @@
 
   &__caption {
     position: absolute;
+
     color: $color-white;
-    top: 60%;
-    left: 15%;
+    @include make-it-center;
     text-transform: uppercase;
     font-size: 1.8rem;
-
+    top: 80%;
     opacity: 0;
     transition: all 0.5s;
   }
 
   &:hover &__caption {
     opacity: 1;
-    transform: translateY(-130%);
-    &--2 {
-      transform: translate(-0.5rem, -130%);
-    }
+
+    @include make-it-center;
   }
 
   &__img {
