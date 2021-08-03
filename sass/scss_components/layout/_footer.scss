@@ -11,6 +11,10 @@
 
   &__logo {
     width: 15rem;
+
+    &--small {
+      display: none;
+    }
   }
 
   // &__navigation {

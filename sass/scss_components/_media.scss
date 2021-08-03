@@ -169,4 +169,31 @@
   .form__radio-group:not(:last-child) {
     margin-bottom: 2rem;
   }
+
+  .footer {
+    font-size: 1rem;
+    padding: 5rem 0;
+
+    &__logo-box {
+      margin-bottom: 4rem;
+    }
+    &__logo {
+      display: none;
+      &--small {
+        display: inline-block;
+        width: 15rem;
+      }
+    }
+    .row {
+      flex-direction: column;
+    }
+
+    .col-1-of-2 {
+      width: 80%;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
 }
