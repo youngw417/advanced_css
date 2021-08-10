@@ -196,4 +196,56 @@
       }
     }
   }
+
+  .navigation__link {
+    &:link,
+    &:visited {
+      font-size: 2rem;
+      font-weight: 200;
+    }
+  }
+
+  .navigation__nav {
+    top: 8%;
+  }
+
+  .popup {
+    &__content {
+      height: 120vh;
+      top: 350px;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    &__left {
+      width: 80%;
+      display: flex;
+    }
+    &__right {
+      width: 90%;
+      padding: 0 0;
+
+      .heading-secondary {
+        margin-top: 2rem;
+      }
+    }
+
+    &__img {
+      width: 50%;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+    }
+
+    &__close {
+      &:link,
+      &:visited {
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+  }
 }
+
+// updatw1 in issac
